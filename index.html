@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Tenggareng Weather Website</title>
+  <link rel='stylesheet' href='https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<!-- navbar -->
+<div class="container mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-8">
+    <div class="flex">
+      <input class="shadow-md border rounded-lg py-2 px-3 text-gray-800 placeholder-gray-800 font-bold  focus:outline-none focus:shadow-outline" id="town-search" type="text" placeholder="🔍 Search town...">
+    </div>
+    <div class="flex flex-col text-right -m-2">
+      <h1 id="time" class="text-white text-lg font-bold"></h1>
+      <h2 id="date" class="text-white text-md"></h2>
+    </div>
+  </div>
+</div>
+<!-- akhir navbar -->
+
+<!-- main -->
+<div class="container mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-8">
+    <div class="flex flex-col justify-self-end text-right mt-5">
+      <img src="http://openweathermap.org/img/wn/03d@2x.png" id="img-weather" class="w-20 h-20 ml-24">
+      <h1 id="town" class="text-white text-4xl font-bold -mt-3"></h1>
+      <h2 id="description" class="text-white text-xl mt-1"></h2>
+      <h3 id="degree" class="text-white text-2xl font-bold mt-1"></h3>
+    </div>
+    <div class="flex">
+    <img src="https://assets.thebasetrip.com/api/v2/countries/flags/indonesia.png" id="img-country" class="w-60 h-60 shadow-lg rounded-full object-cover">
+    </div>
+  </div>
+</div>
+<!-- akhir main -->
+
+<!-- footer -->
+<div class="container mx-auto mt-7">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-8">
+    <div class="flex flex-col justify-self-start -mt-2">
+      <button id="theme" class="bg-gray-700 rounded-full w-10 h-10 dark"><span class="moon">🌙</span><span class="sun hidden">☀️</span><button>
+    </div>
+    <div class="flex justify-self-end">
+      <h2 id="humidity" class="text-white text-lg mt-1 font-bold mr-4"></h2>
+        <h2 id="pressure" class="text-white text-lg mt-1 font-bold mr-4"></h2>
+        <h2 id="wind" class="text-white text-lg mt-1 font-bold"></h2>
+    </div>
+  </div>
+</div>
+<!-- akhir footer -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
