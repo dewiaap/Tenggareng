@@ -1,4 +1,0 @@
-on: push
-name: Get secret
-env:
-    API_KEY: ${{ secrets.FTP_PASSWORD }}

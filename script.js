@@ -31,7 +31,7 @@ const dateTime = () => { $("#time").html(moment().format("hh:mm A"));
   $("#date").html(moment().format("ddd, DD MMM YYYY"));
 };
 const weatherBalloon = (cityID) => {
-  var key = process.env.API_KEY;
+  var key = "0df0bce6b36aceda10c8d5756b323d06";
   fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=" +
       cityID +
